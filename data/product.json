@@ -1,1 +1,14 @@
-[{}]
+[
+  {
+    "name":"google",
+    "price":2700    
+  },
+  {
+    "name":"yahoo",
+    "price":1000    
+  },
+  {
+    "name":"microsoft",
+    "price":2500    
+  }
+]
