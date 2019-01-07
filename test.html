@@ -29,11 +29,15 @@ Hello GitHub Page
      //
      list.innerHTML="";
      let product;
+     let sum=0;
      for(let i =0;i<result.length;i++){
        product=result[i];
        //console.log(product);
        list.innerHTML+=product.name.bold()+ " - " + product.price +"<hr/>";
+       sum+=product.price;
      }
+     let avg=sum/result.length;
+     lst.innerHTML+="平均售價:"+avg;
    });
  </script>
 </html>
