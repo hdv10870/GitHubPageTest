@@ -1,8 +1,26 @@
-<html>
+<!DOCTYPE html>
 <head>
+  <meta charset="UTF-8"/>
 <title>Hello GitHubPageTest</title>
 </head>
 <body>
 Hello GitHub Page
 </body>
+  <h1>AJAX網路連線基本操作</h1>
+  <div id="list"></div>
+ <script>
+   //先顯示LOADING的訊息
+   let list=document.getElementById("list");
+   list.innerHtml="...Looding...";
+   //透過AJAX fetch API連線到遠端的網址 捉取資料
+   /*
+   fetch(網址).then(function(response){
+    //response 物件,代表伺服器的回應    
+   })
+   */
+   let src ="https://hdv10870.github.io/GitHubPageTest/README.md";
+   fetch(src).then(function(response){
+      console.log(response);
+   });
+ </script>
 </html>
