@@ -20,7 +20,10 @@ Hello GitHub Page
    */
    let src ="https://hdv10870.github.io/GitHubPageTest/README.md";
    fetch(src).then(function(response){
-      console.log(response);
+      //console.log(response);
+     return response.text();
+   }).then(function(result){
+     console.log('data',result);
    });
  </script>
 </html>
