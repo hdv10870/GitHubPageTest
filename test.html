@@ -22,9 +22,11 @@ Hello GitHub Page
    let src ="https://hdv10870.github.io/GitHubPageTest/data/product.json";
    fetch(src).then(function(response){
       //console.log(response);
-     return response.text();
+     //eturn response.text();
+     return response.json(); //將資料用JSON的格式詮釋成物件和陣列的組合.
    }).then(function(result){
-     console.log("最終data",result);
+     //console.log("最終data",result);
+     
    });
  </script>
 </html>
