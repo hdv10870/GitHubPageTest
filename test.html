@@ -31,7 +31,8 @@ Hello GitHub Page
      let product;
      for(let i =0;i<result.length;i++){
        product=result[i];
-       console.log(product);
+       //console.log(product);
+       list.innerHTML+=product.name.bold()+ " _ " + product.price +"<hr/>";
      }
    });
  </script>
