@@ -26,7 +26,13 @@ Hello GitHub Page
      return response.json(); //將資料用JSON的格式詮釋成物件和陣列的組合.
    }).then(function(result){
      //console.log("最終data",result);
-     
+     //
+     list.innerHTML="";
+     let product;
+     for(let i =0;i<result.length;i++){
+       product=result[i];
+       console.log(product);
+     }
    });
  </script>
 </html>
